@@ -1,0 +1,52 @@
+/* Header.css */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: white; 
+    padding: 10px 20px; 
+  }
+  
+  header img {
+    max-width: 100%;
+  }
+  
+  .companyName {
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue';
+  }
+
+  .logoNom{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block; 
+    margin-right: 10px; 
+    font-family: 'Roboto';
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333; 
+  }
+  
+  .contactHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-family: 'Roboto';
+  }
+  
+  .contactHeader p {
+    margin: 0.625rem;
+  }
+  
