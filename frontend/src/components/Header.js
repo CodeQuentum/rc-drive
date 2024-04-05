@@ -15,7 +15,7 @@ const Header = () => {
           <li><a href="/services">Services</a></li>
         </ul>
       </nav>
-      <div class="contactHeader">
+      <div className="contactHeader">
       <p>+33 6  01 02 03 04</p>
       <p>Demandez votre devis</p>
       </div>
