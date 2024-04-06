@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Transferts Aéroport",
+        "description": "Service de transfert depuis et vers les aéroports.",
+        "icon": "✈️"
+    },
+    {
+        "id": 2,
+        "title": "Déplacements Privés",
+        "description": "Chauffeur privé pour vos déplacements personnels, courte ou longue durée.",
+        "icon": "🚗"
+    },
+    {
+        "id": 3,
+        "title": "Événements Spéciaux",
+        "description": "Service de transport pour événements spéciaux et soirées.",
+        "icon": "🎉"
+    },
+    {
+        "id": 4,
+        "title": "Visites Touristiques",
+        "description": "Visites guidées de la ville et de ses attractions.",
+        "icon": "🏰"
+    }
+]

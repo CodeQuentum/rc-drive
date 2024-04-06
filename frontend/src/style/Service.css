@@ -1,0 +1,52 @@
+.servicesContainer {
+    padding: 50px;
+    text-align: center;
+}
+
+.titre h3 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.titre h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.serviceCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.serviceCard {
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.serviceCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.serviceIcon {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #666;
+}

@@ -1,18 +1,32 @@
 .avisContainer{
     background-color: #3E000C;
 }
+.avisContainer h3{
+    font-size: 19px;
+    font-style: italic;
+}
+
+.avisContainer h2{
+    font-size: 52px;
+    font-style: bold;
+}
 
 .avisContainer .titre{
     color: white;
+    font-family: 'Roboto';
 }
 
-.avisCard{
-    max-width: 400px;
-    max-height: 150px;
+.avisCard {
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
 }
-
-.bottomCard{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.card-footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #ddd;
 }

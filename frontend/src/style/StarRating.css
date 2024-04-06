@@ -1,0 +1,14 @@
+/* StarRating.css */
+
+.star {
+    font-size: 20px;
+    color: #ccc; 
+}
+
+.filled-star {
+    color: #FFD700;
+}
+
+.star-rating {
+    display: inline-block;
+}

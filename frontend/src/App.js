@@ -2,7 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Intro from './components/Intro';
-import Avis from './components/Avis'
+import Avis from './components/Avis';
+import Service from './components/Service';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Intro />
       <Avis />
+      <Service />
     </div>
   );
 }
