@@ -13,7 +13,9 @@ const Intro = () => {
     };
 
     return (
-        <div className="introContainer" style={introContainerStyle}>
+   
+        <div className="introContainer" style={introContainerStyle}>     
+        <div className="imageOverlay"></div>
             <div className="introContent">
                 <div className="leftContent">
                     <h3>Solution de déplacement de qualité</h3>
