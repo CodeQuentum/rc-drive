@@ -5,6 +5,9 @@ import Intro from './components/Intro';
 import Avis from './components/Avis';
 import Service from './components/Service';
 import About from './components/About'
+import CTA from './components/CTA';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
       <section id="about">
       <About />
       </section>
+      <CTA />
+      <Footer />
     </div>
   );
 }

@@ -9,9 +9,9 @@ const ScrollToSection = ({ sectionId, children }) => {
   };
 
   return (
-    <button onClick={scrollToSection}>
+    <div onClick={scrollToSection}>
       {children}
-    </button>
+    </div>
   );
 };
 
