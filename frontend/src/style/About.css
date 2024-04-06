@@ -1,0 +1,59 @@
+.aboutContainer {
+    color: #000000;
+    padding: 50px;
+}
+
+.aboutContent {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.aboutImage {
+    max-width: 553px; 
+    max-height: 604px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.textContainer {
+    max-width: 600px;
+    margin-left: 200px;
+}
+
+.title {
+    font-size: 52px;
+    font-style: bold;
+}
+
+.subtitle {
+    font-size: 19px;
+    font-style: italic;
+}
+
+.aboutText {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .textContainer {
+        max-width: 600px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}

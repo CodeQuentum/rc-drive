@@ -8,7 +8,7 @@ const Service = () => {
         <div className="servicesContainer">
             <div className='titre'>
                 <h3>Nos services</h3>
-                <h2>ONT VOUS PROPOSE :</h2>
+                <h2>ON VOUS PROPOSE :</h2>
             </div>
             <div className="serviceCardsContainer">
                 {serviceData.map((service, index) => (

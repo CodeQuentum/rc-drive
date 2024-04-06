@@ -1,14 +1,15 @@
 import React from 'react';
 import '../style/Intro.css';
 import home from '../assets/images/home.webp';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Intro = () => {
     const introContainerStyle = {
-        backgroundImage: `url(${home})`, // Utilisez l'image comme arrière-plan
-        backgroundSize: 'cover', // Redimensionne l'image pour couvrir tout le conteneur
-        backgroundPosition: 'center', // Centre l'image dans le conteneur
-        color: '#fff', // Couleur du texte
-        padding: '50px', // Espacement intérieur
+        backgroundImage: `url(${home})`,
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        color: '#fff', 
+        padding: '50px',
     };
 
     return (
@@ -27,19 +28,31 @@ const Intro = () => {
                 <div className="rightContent">
                     <form>
                         <h2>Demandez un devis !</h2>
-                        <p>Nom</p>
-                        <input type="text" placeholder="Dutronc" />
-                        <p>Prénom</p>
-                        <input type="text" placeholder="Jacques" />
-                        <p>Numéro de téléphone</p>
-                        <input type="text" placeholder="06 XX XX XX XX" />
-                        <p>Adresse mail</p>
-                        <input type="email" placeholder="j.dutronc@exemple.com" />
-                        <p>Choississez votre service</p>
-                        <input type="text" placeholder="choisir dans la liste" />
-                        <p>Nous sommes à votre écoute</p>
-                        <textarea placeholder="J'arrive à l'aéroport a 15h..."></textarea>
-                        <button type="submit">Demandez votre devis gratuit !</button>
+                        <div className="form-group">
+                            <label htmlFor="nom">Nom</label>
+                            <input type="text" className="form-control" id="nom" placeholder="Dutronc" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="prenom">Prénom</label>
+                            <input type="text" className="form-control" id="prenom" placeholder="Jacques" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="telephone">Numéro de téléphone</label>
+                            <input type="text" className="form-control" id="telephone" placeholder="06 XX XX XX XX" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="email">Adresse mail</label>
+                            <input type="email" className="form-control" id="email" placeholder="j.dutronc@exemple.com" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="service">Choisissez votre service</label>
+                            <input type="text" className="form-control" id="service" placeholder="choisir dans la liste" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="message">Nous sommes à votre écoute</label>
+                            <textarea className="form-control" id="message" placeholder="J'arrive à l'aéroport à 15h..."></textarea>
+                        </div>
+                        <button type="submit" className="btn btn-primary">Demandez votre devis gratuit !</button>
                     </form>
                 </div>
             </div>

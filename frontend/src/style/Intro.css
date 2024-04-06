@@ -20,7 +20,6 @@
 }
 
 .leftContent h3 {
-    font-family: 'Roboto', sans-serif;
     font-size: 19px;
     font-style: italic;
     margin-bottom: 0px;
@@ -28,13 +27,11 @@
 
 .leftContent h2 {
     font-size: 60px;
-    font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     margin-top: 0px;
 }
 
 .leftContent p {
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
 
@@ -63,10 +60,39 @@ textarea {
     padding: 8px;
 }
 
-button {
+.btn-primary {
     padding: 10px 20px;
     background-color: #C29500;
     color: #fff;
     border: none;
     cursor: pointer;
+}
+.btn:hover {
+    color: inherit;
+    background-color: inherit; 
+    border-color: transparent;
+}
+
+/* Media query pour les écrans de taille téléphone (moins de 576px) */
+@media (max-width: 575.98px) {
+    .introContainer {
+        padding: 20px; 
+        height: 170vh;
+    }
+
+    .introContent {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .rightContent {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 280px) {
+    .introContainer {
+        padding: 20px; 
+        height: 250vh;
+    }
 }

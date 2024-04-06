@@ -1,5 +1,3 @@
-/* Header.css */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -8,13 +6,17 @@ header {
     padding: 10px 20px; 
   }
   
+  .container button{
+    border: none;
+    background-color: none;
+  }
+  
   header img {
     max-width: 100%;
   }
   
   .companyName {
     font-size: 1.5rem;
-    font-family: 'Bebas Neue';
   }
 
   .logoNom{
@@ -31,7 +33,6 @@ header {
   nav ul li {
     display: inline-block; 
     margin-right: 10px; 
-    font-family: 'Roboto';
   }
   
   nav ul li a {
@@ -43,7 +44,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    font-family: 'Roboto';
   }
   
   .contactHeader p {
