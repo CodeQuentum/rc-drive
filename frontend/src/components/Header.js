@@ -2,27 +2,18 @@ import React from 'react';
 import ScrollToSection from './ScrollToSection';
 import '../style/Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import brandLogo from '../assets/logo/blackLogo.png';
 
 const Header = () => {
   return (
     <header className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <a className="navbar-brand" href="/">
-          <img src="chemin/vers/votre/image.jpg" alt="Logo du site" className="mr-2" width="50" height="50" />
-          <span className="companyName">RC DRIVE</span>
+          <img src={brandLogo} alt="Logo de RC Drive" className="mr-2" width="150" height="150" />
         </a>
 
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <ScrollToSection sectionId="about">
-                A propos
-              </ScrollToSection>
-            </li>
+        <div className="navbar-nav ml-auto" id="navigation">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <ScrollToSection sectionId="contact">
                 Contact
@@ -33,14 +24,18 @@ const Header = () => {
                 Services
               </ScrollToSection>
             </li>
+            <li className="nav-item">
+              <ScrollToSection sectionId="about">
+                A propos
+              </ScrollToSection>
+            </li>
           </ul>
-        </div>
-
-        <div className="contactHeader">
+          <div className='contactHeader'>
           <p className="mr-3">+33 6 01 02 03 04</p>
           <ScrollToSection sectionId="contact">
             <button className="btn btn-primary">Demandez votre devis</button>
           </ScrollToSection>
+          </div>
         </div>
       </div>
     </header>

@@ -18,10 +18,15 @@ const Intro = () => {
         <div className="imageOverlay"></div>
             <div className="introContent">
                 <div className="leftContent">
-                    <h3>Solution de déplacement de qualité</h3>
-                    <h2>Chauffeur privé sur demande</h2>
-                    <p>Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam vestibulum. Elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverra est.</p>
+                    <h3>Offrez-vous un voyage en toute sérénité</h3>
+                    <h2>Chauffeur privé</h2>
+                    <p>Nous sommes à votre disposition pour vous conduire dans les meilleures conditions.
+                        Jamais un supplément ne vous serras demandé pour vos bagages. Dans nos véhicules vous pourrez retrouver 
+                        des rehausseurs pour vos enfants, des bouteilles d'eau, des chargeurs pour votre téléphone, ordinateur ou tablette,
+                        et même des friandises.
+                    </p>
                     <ul>
+                        <li>Attente avec pancarte a votre nom pour les gares et aeroports</li>
                         <li>Tous nos chauffeurs ont une licence</li>
                         <li>Entreprise de confiance</li>
                         <li>Devis clair et transparent</li>

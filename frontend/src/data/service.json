@@ -22,5 +22,29 @@
         "title": "Visites Touristiques",
         "description": "Visites guidées de la ville et de ses attractions.",
         "icon": "🏰"
+    },
+    {
+        "id": 5,
+        "title": "Transferts Gare",
+        "description": "Service de transfert depuis et vers les gares.",
+        "icon": "🚆"
+    },
+    {
+        "id": 6,
+        "title": "Journée Shopping",
+        "description": "Chauffeur pour vos séances shopping et centres commerciaux.",
+        "icon": "🛍️"
+    },
+    {
+        "id": 7,
+        "title": "Parc d'Attractions",
+        "description": "Transport vers les parcs d'attractions et les lieux de divertissement.",
+        "icon": "🎡"
+    },
+    {
+        "id": 8,
+        "title": "Déplacements Professionnels",
+        "description": "Service de transport pour vos déplacements professionnels.",
+        "icon": "💼"
     }
 ]
