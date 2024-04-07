@@ -1,32 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
+import serviceData from '../data/service.json';
 import '../style/Intro.css';
 import home from '../assets/images/home.webp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Intro = () => {
+    const [selectedService, setSelectedService] = useState('');
+
     const introContainerStyle = {
         backgroundImage: `url(${home})`,
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
-        color: '#fff', 
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        color: '#fff',
         padding: '50px',
     };
 
     return (
-   
-        <div className="introContainer" style={introContainerStyle}>     
-        <div className="imageOverlay"></div>
+        <div className="introContainer" style={introContainerStyle}>
+            <div className="imageOverlay"></div>
             <div className="introContent">
                 <div className="leftContent">
                     <h3>Offrez-vous un voyage en toute sérénité</h3>
                     <h2>Chauffeur privé</h2>
-                    <p>Nous sommes à votre disposition pour vous conduire dans les meilleures conditions.
-                        Jamais un supplément ne vous serras demandé pour vos bagages. Dans nos véhicules vous pourrez retrouver 
-                        des rehausseurs pour vos enfants, des bouteilles d'eau, des chargeurs pour votre téléphone, ordinateur ou tablette,
-                        et même des friandises.
-                    </p>
+                    <p>Nous sommes à votre disposition pour vous conduire dans les meilleures conditions. Jamais un supplément ne vous sera demandé pour vos bagages. Dans nos véhicules, vous pourrez retrouver des rehausseurs pour vos enfants, des bouteilles d'eau, des chargeurs pour votre téléphone, ordinateur ou tablette, et même des friandises.</p>
                     <ul>
-                        <li>Attente avec pancarte a votre nom pour les gares et aeroports</li>
+                        <li>Attente avec pancarte à votre nom pour les gares et aéroports</li>
                         <li>Tous nos chauffeurs ont une licence</li>
                         <li>Entreprise de confiance</li>
                         <li>Devis clair et transparent</li>
@@ -52,8 +50,20 @@ const Intro = () => {
                             <input type="email" className="form-control" id="email" placeholder="j.dutronc@exemple.com" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="service">Choisissez votre service</label>
-                            <input type="text" className="form-control" id="service" placeholder="choisir dans la liste" />
+                            <label htmlFor="service">Quel service vous intéresse ?</label>
+                            <select
+                                className="form-control"
+                                id="service"
+                                value={selectedService}
+                                onChange={(e) => setSelectedService(e.target.value)}
+                            >
+                                <option value="">Choisir dans la liste</option>
+                                {serviceData.map((service) => (
+                                    <option key={service.id} value={service.title}>
+                                        {service.title}
+                                    </option>
+                                ))}
+                            </select>
                         </div>
                         <div className="form-group">
                             <label htmlFor="message">Nous sommes à votre écoute</label>
@@ -65,6 +75,6 @@ const Intro = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Intro;
