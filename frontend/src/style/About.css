@@ -44,6 +44,10 @@
     margin-bottom: 20px;
 }
 
+.aboutText span{
+    font-weight: 700;
+}
+
 @media (max-width: 575.98px) {
 
     .aboutContent {

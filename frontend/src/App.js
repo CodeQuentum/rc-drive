@@ -6,6 +6,7 @@ import Avis from './components/Avis';
 import Service from './components/Service';
 import About from './components/About'
 import CTA from './components/CTA';
+import Flotte from './components/Flotte';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -14,9 +15,7 @@ function App() {
     
     <div>
       <Header />
-      <section id="contact">
       <Intro />
-      </section>
       <Avis />
       <section id="services">
       <Service />
@@ -24,6 +23,7 @@ function App() {
       <section id="about">
       <About />
       </section>
+      <Flotte />
       <CTA />
       <Footer />
     </div>

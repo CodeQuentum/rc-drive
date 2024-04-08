@@ -1,5 +1,7 @@
 .avisContainer{
     background-color: #3E000C;
+    justify-content: center;
+    text-align: center;
 }
 .avisContainer h3{
     font-size: 19px;
