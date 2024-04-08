@@ -31,7 +31,7 @@ const Intro = () => {
             arrivalAddress,
             pickupDateTime
         });
-        // Réinitialiser les champs du formulaire après soumission (optionnel)
+        // Réinitialiser les champs du formulaire après soumission
         setClientName('');
         setEmail('');
         setPhoneNumber('');

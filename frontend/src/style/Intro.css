@@ -155,6 +155,7 @@ textarea {
 
     .rightContent {
         margin-top: 20px;
+        padding: 20px;
     }    
 
     .leftContent {
@@ -164,6 +165,10 @@ textarea {
     
     .leftContent h2 {
         font-size: 40px;
+    }
+    .passengerLuggageSection {
+        padding: 10px;
+        font-size: 13.3px;
     }
 }
 
