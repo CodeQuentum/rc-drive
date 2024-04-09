@@ -52,7 +52,7 @@ const Intro = () => {
                 <div className="leftContent">
                     <h3>Offrez-vous un voyage en toute sérénité</h3>
                     <h2>RC Drive - Chauffeur privé</h2>
-                    <p>Nous sommes à votre disposition pour vous conduire dans les meilleures conditions.<br />
+                    <p>Nous sommes à votre disposition pour vous conduire dans les meilleures conditions à <span>Paris</span> et sa <span>région</span>.<br />
                     Parceque votre confort est notre première préoccupation, vous serrez transporté à bord d'un véhicule haut de gamme tout équipé : <br />
                     Accès internet <span>wifi gratuit</span>, <span>journaux</span>, <span>friandise</span>, <span>bouteille d'eau</span> et <span>chargeur</span> pour smartphone. <br />
                     Tous nos véhicules sont également équipés de <span>terminaux CB</span> pour votre confort de paiement.</p>

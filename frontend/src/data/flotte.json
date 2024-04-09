@@ -2,17 +2,17 @@
   "flotte": [
     {
       "title": "Classique avec Chauffeur",
-      "description": "Profitez d'un service de qualité avec notre gamme classique. Des véhicules confortables pour vos déplacements en toute tranquillité.",
+      "description": "Profitez d'un service de qualité avec notre gamme classique. Des véhicules confortables pour vos déplacements en toute tranquillité. (Jusqu'à 4 passagers)",
       "logo": "frontend/src/assets/logo-voiture/gamme-classique.png"
     },
     {
       "title": "Berline avec Chauffeur",
-      "description": "Découvrez notre gamme berline premium. Des voitures élégantes et luxueuses pour des trajets haut de gamme.",
+      "description": "Découvrez notre gamme berline premium. Des voitures élégantes et luxueuses pour des trajets haut de gamme. (Jusqu'à 3 passagers)",
       "logo": "frontend/src/assets/logo-voiture/gamme-berline.png"
     },
     {
       "title": "Van avec Chauffeur",
-      "description": "Optez pour notre gamme van spacieuse. Idéal pour les groupes ou les familles qui ont besoin de plus d'espace lors de leurs déplacements.",
+      "description": "Optez pour notre gamme van spacieuse. Idéal pour les groupes ou les familles qui ont besoin de plus d'espace lors de leurs déplacements. (Jusqu'a 6 passagers)",
       "logo": "frontend/src/assets/logo-voiture/gamme-van.jpg"
     }
   ]
