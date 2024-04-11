@@ -18,6 +18,7 @@ const Devis = () => {
         passengerCounts: { adulte: '', enfant: '', bébé: '' },
         luggageCounts: { cabinne: '', soute: '', special: '' }
     });
+    const [messageSent, setMessageSent] = useState(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -42,7 +43,7 @@ const Devis = () => {
             const response = await axios.post('http://localhost:4000/api/mail/send-email', formData, {});
             console.log('Réponse du serveur :', response.data);
             alert('E-mail envoyé avec succès !');
-
+            setMessageSent(true);
             // Réinitialiser les champs du formulaire après soumission
             setFormData({
                 clientName: '',
@@ -143,6 +144,8 @@ const Devis = () => {
                                 className="form-control"
                                 id="adulte"
                                 name="passengerCounts.adulte"
+                                min="0"
+                                max="9"
                                 value={formData.passengerCounts.adulte}
                                 onChange={handleInputChange}
                             />
@@ -154,6 +157,8 @@ const Devis = () => {
                                 className="form-control"
                                 id="enfant"
                                 name="passengerCounts.enfant"
+                                min="0"
+                                max="9"
                                 value={formData.passengerCounts.enfant}
                                 onChange={handleInputChange}
                             />
@@ -165,6 +170,8 @@ const Devis = () => {
                                 className="form-control"
                                 id="bébé"
                                 name="passengerCounts.bébé"
+                                min="0"
+                                max="9"
                                 value={formData.passengerCounts.bébé}
                                 onChange={handleInputChange}
                             />
@@ -179,6 +186,8 @@ const Devis = () => {
                                 className="form-control"
                                 id="cabinne"
                                 name="luggageCounts.cabinne"
+                                min="0"
+                                max="9"
                                 value={formData.luggageCounts.cabinne}
                                 onChange={handleInputChange}
                             />
@@ -190,6 +199,8 @@ const Devis = () => {
                                 className="form-control"
                                 id="soute"
                                 name="luggageCounts.soute"
+                                min="0"
+                                max="9"
                                 value={formData.luggageCounts.soute}
                                 onChange={handleInputChange}
                             />
@@ -201,6 +212,8 @@ const Devis = () => {
                                 className="form-control"
                                 id="special"
                                 name="luggageCounts.special"
+                                min="0"
+                                max="9"
                                 value={formData.luggageCounts.special}
                                 onChange={handleInputChange}
                             />
@@ -244,6 +257,7 @@ const Devis = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Demandez votre devis gratuit !</button>
             </form>
+            {messageSent && <p>Message envoyé</p>}
         </div>
     );
 };
