@@ -7,9 +7,9 @@ const Footer = () => {
         <footer className="footerContainer">
             <Container>
                 <div className="footerContent"> 
-                    <p>Adresse: 123 Rue du VTC, Paris, France</p>
-                    <p>Téléphone: +33 6 01 02 03 04</p>
-                    <p>Mail : mail@exemple.fr</p>
+                    <p>Adresse: 44 rue de la therouanne, 77380 Combs-la-Ville, France</p>
+                    <p>Téléphone: +33 6 02 68 50 14</p>
+                    <p>Mail : rcdrive-prestige@gmail.com</p>
                     <p>© 2024 RC Drive. Tous droits réservés.</p>
                 </div>
             </Container>

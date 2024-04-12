@@ -31,7 +31,7 @@ const Header = () => {
             </li>
           </ul>
           <div className='contactHeader'>
-          <p className="mr-3">+33 6 01 02 03 04</p>
+          <p className="mr-3">+33 6 02 68 50 14</p>
           <ScrollToSection sectionId="contact">
             <button className="btn btn-primary">Demandez votre devis</button>
           </ScrollToSection>
