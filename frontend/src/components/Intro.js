@@ -14,10 +14,10 @@ const Intro = () => {
                     <h2>RC Drive - Chauffeur privé</h2>
                     <p>Nous sommes à votre disposition pour vous conduire dans les meilleures conditions à <span>Paris</span> et sa <span>région</span>.<br />
                         Parce que votre confort est notre première préoccupation, vous serez transporté à bord d'un véhicule haut de gamme tout équipé : <br />
-                        Accès internet <span>wifi gratuit</span>, <span>journaux</span>, <span>friandise</span>, <span>bouteille d'eau</span> et <span>chargeur</span> pour smartphone. <br />
+                        Accès internet <span>wifi gratuit</span>, <span>journaux</span>, <span>friandises</span>, <span>bouteilles d'eau</span> et <span>chargeurs</span> pour smartphone. <br />
                         Tous nos véhicules sont également équipés de <span>terminaux CB</span> pour votre confort de paiement.</p>
                     <ul>
-                        <li>Attente avec pancarte à votre nom pour les gares et aéroports</li>
+                        <li>Attente avec pancarte à votre nom dans les gares et aéroports</li>
                         <li>Tous nos chauffeurs ont une licence</li>
                         <li>Entreprise de confiance</li>
                         <li>Devis clair et transparent</li>

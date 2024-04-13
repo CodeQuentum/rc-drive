@@ -2,55 +2,55 @@
     {
         "note": 5,
         "prenom": "Sophie",
-        "nom": "Martin",
+        "nom": "M.",
         "avis": "Service excellent ! Le chauffeur était très professionnel et ponctuel. Je recommande vivement."
     },
     {
         "note": 4,
         "prenom": "Jean",
-        "nom": "Dubois",
+        "nom": "D.",
         "avis": "Très bon service dans l'ensemble. Chauffeur courtois et véhicule confortable."
     },
     {
         "note": 5,
         "prenom": "Marie",
-        "nom": "Lefevre",
+        "nom": "L.",
         "avis": "Expérience parfaite. Le chauffeur était sympathique et le trajet s'est déroulé sans encombre."
     },
     {
         "note": 4,
         "prenom": "Charlotte",
-        "nom": "Moreau",
+        "nom": "M.",
         "avis": "Bon service global. Le chauffeur était aimable et le véhicule propre."
     },
     {
         "note": 5,
         "prenom": "Luc",
-        "nom": "Roux",
+        "nom": "R.",
         "avis": "Excellent chauffeur, conduite sûre et agréable."
     },
     {
         "note": 4,
         "prenom": "Emma",
-        "nom": "Garcia",
+        "nom": "G.",
         "avis": "Très satisfaite du service. Le chauffeur était professionnel et discret."
     },
     {
         "note": 5,
         "prenom": "Julie",
-        "nom": "Bertrand",
+        "nom": "B.",
         "avis": "Rien à redire, tout était parfait !"
     },
     {
         "note": 5,
         "prenom": "Nicolas",
-        "nom": "Dupont",
+        "nom": "D.",
         "avis": "Service exceptionnel. Le chauffeur était courtois et le trajet était confortable."
     },
     {
         "note": 4,
         "prenom": "Élise",
-        "nom": "Renard",
+        "nom": "R.",
         "avis": "Très bon service, chauffeur professionnel et ponctuel."
     }
 ]

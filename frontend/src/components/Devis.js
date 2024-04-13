@@ -16,7 +16,7 @@ const Devis = () => {
         arrivalAddress: '',
         pickupDateTime: '',
         passengerCounts: { adulte: '', enfant: '', bébé: '' },
-        luggageCounts: { cabinne: '', soute: '', special: '' }
+        luggageCounts: { cabine: '', soute: '', special: '' }
     });
     const [messageSent, setMessageSent] = useState(false);
 
@@ -40,7 +40,7 @@ const Devis = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:4000/api/mail/send-email', formData, {});
+            const response = await axios.post('https://rcdrive-prestige.fr/rcdrive_node_app/api/mail/send-email', formData, {});
             console.log('Réponse du serveur :', response.data);
             alert('E-mail envoyé avec succès !');
             setMessageSent(true);
@@ -55,7 +55,7 @@ const Devis = () => {
                 arrivalAddress: '',
                 pickupDateTime: '',
                 passengerCounts: { adulte: '', enfant: '', bébé: '' },
-                luggageCounts: { cabinne: '', soute: '', special: '' }
+                luggageCounts: { cabine: '', soute: '', special: '' }
             });
         } catch (error) {
             alert('Une erreur s\'est produite lors de l\'envoi de l\'e-mail. Veuillez réessayer.');
@@ -66,6 +66,7 @@ const Devis = () => {
         <div className="rightContent">
             <form onSubmit={handleFormSubmit}>
                 <section id="contact"><h2>Demandez un devis !</h2></section>
+                <div className='nomTelSection'>
                 <div className="form-group">
                     <label htmlFor="clientName">Nom & Prénom</label>
                     <input
@@ -75,11 +76,11 @@ const Devis = () => {
                         name="clientName"
                         value={formData.clientName}
                         onChange={handleInputChange}
-                        placeholder="Dutronc Jacques"
+                        placeholder="Nom Prénom"
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="phoneNumber">Numéro de téléphone</label>
+                    <label htmlFor="phoneNumber">Numéro</label>
                     <input
                         type="text"
                         className="form-control"
@@ -90,6 +91,7 @@ const Devis = () => {
                         placeholder="06 XX XX XX XX"
                     />
                 </div>
+                </div>
                 <div className="form-group">
                     <label htmlFor="email">Adresse e-mail</label>
                     <input
@@ -99,11 +101,12 @@ const Devis = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        placeholder="j.dutronc@exemple.com"
+                        placeholder="nom.prenom@exemple.com"
                     />
                 </div>
+                <div className='serviceGammeSection'>
                 <div className="form-group">
-                    <label htmlFor="selectedService">Quel service vous intéresse ?</label>
+                    <label htmlFor="selectedService">Service :</label>
                     <select
                         className="form-control"
                         id="selectedService"
@@ -119,7 +122,7 @@ const Devis = () => {
                     </select>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="selectedGamme">Quelle gamme vous intéresse ?</label>
+                    <label htmlFor="selectedGamme"> Gamme :</label>
                     <select
                         className="form-control"
                         id="selectedGamme"
@@ -134,11 +137,12 @@ const Devis = () => {
                         ))}
                     </select>
                 </div>
+                </div>
                 <div className="passengerLuggageSection">
                     <div className="passengersSection">
                         <label>Passagers :</label>
                         <div className="inputGroup">
-                            <label>Adultes :</label>
+                            <label>Adultes</label>
                             <input
                                 type="number"
                                 className="form-control"
@@ -151,7 +155,7 @@ const Devis = () => {
                             />
                         </div>
                         <div className="inputGroup">
-                            <label>-10 ans :</label>
+                            <label>-10 ans</label>
                             <input
                                 type="number"
                                 className="form-control"
@@ -164,7 +168,7 @@ const Devis = () => {
                             />
                         </div>
                         <div className="inputGroup">
-                            <label>-2 ans :</label>
+                            <label>-2 ans</label>
                             <input
                                 type="number"
                                 className="form-control"
@@ -180,7 +184,7 @@ const Devis = () => {
                     <div className="luggageSection">
                         <label>Bagages :</label>
                         <div className="inputGroup">
-                            <label>Cabine :</label>
+                            <label>Cabine</label>
                             <input
                                 type="number"
                                 className="form-control"
@@ -188,12 +192,12 @@ const Devis = () => {
                                 name="luggageCounts.cabinne"
                                 min="0"
                                 max="9"
-                                value={formData.luggageCounts.cabinne}
+                                value={formData.luggageCounts.cabine}
                                 onChange={handleInputChange}
                             />
                         </div>
                         <div className="inputGroup">
-                            <label>Soute :</label>
+                            <label>Soute</label>
                             <input
                                 type="number"
                                 className="form-control"
@@ -206,7 +210,7 @@ const Devis = () => {
                             />
                         </div>
                         <div className="inputGroup">
-                            <label>Spéciaux :</label>
+                            <label>Spéciaux</label>
                             <input
                                 type="number"
                                 className="form-control"
@@ -220,6 +224,7 @@ const Devis = () => {
                         </div>
                     </div>
                 </div>
+                <div className='departArrive'>
                 <div className="form-group">
                     <label htmlFor="departureAddress">Adresse de départ</label>
                     <input
@@ -243,6 +248,7 @@ const Devis = () => {
                         value={formData.arrivalAddress}
                         onChange={handleInputChange}
                     />
+                </div>
                 </div>
                 <div className="form-group">
                     <label htmlFor="pickupDateTime">Date et heure de prise en charge</label>
