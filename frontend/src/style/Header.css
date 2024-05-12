@@ -3,6 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px; 
+    background-color: black;
   }
   
   .container button{
@@ -23,6 +24,7 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: white;
   }
   nav ul li {
     display: inline-block; 
@@ -31,7 +33,6 @@ header {
   
   nav ul li a {
     text-decoration: none;
-    color: #333; 
   }
 
   .nav-item{
@@ -42,6 +43,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    color: white;
   }
   
   .contactHeader p {

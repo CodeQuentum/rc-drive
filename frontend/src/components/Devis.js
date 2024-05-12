@@ -40,7 +40,7 @@ const Devis = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://rcdrive-prestige.fr/rcdrive_node_app/api/mail/send-email', formData, {});
+            const response = await axios.post('https://rcdrive-prestige.fr/api/mail/send-email', formData, {});
             console.log('Réponse du serveur :', response.data);
             alert('E-mail envoyé avec succès !');
             setMessageSent(true);
@@ -188,8 +188,8 @@ const Devis = () => {
                             <input
                                 type="number"
                                 className="form-control"
-                                id="cabinne"
-                                name="luggageCounts.cabinne"
+                                id="cabine"
+                                name="luggageCounts.cabine"
                                 min="0"
                                 max="9"
                                 value={formData.luggageCounts.cabine}
@@ -204,7 +204,7 @@ const Devis = () => {
                                 id="soute"
                                 name="luggageCounts.soute"
                                 min="0"
-                                max="9"
+                                max="6"
                                 value={formData.luggageCounts.soute}
                                 onChange={handleInputChange}
                             />
@@ -217,7 +217,7 @@ const Devis = () => {
                                 id="special"
                                 name="luggageCounts.special"
                                 min="0"
-                                max="9"
+                                max="6"
                                 value={formData.luggageCounts.special}
                                 onChange={handleInputChange}
                             />

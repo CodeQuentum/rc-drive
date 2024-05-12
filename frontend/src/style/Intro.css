@@ -190,6 +190,9 @@ textarea {
         padding: 10px;
         font-size: 13.3px;
     }
+    .departArrive label{
+        font-size: small;
+    }
 }
 
 

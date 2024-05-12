@@ -2,11 +2,11 @@ import React from 'react';
 import ScrollToSection from './ScrollToSection';
 import '../style/Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import brandLogo from '../assets/logo/LogoNoir_sans-fond.png';
+import brandLogo from '../assets/logo/blackLogo.jpg';
 
 const Header = () => {
   return (
-    <header className="navbar navbar-expand-lg navbar-light bg-light">
+    <header className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         <a className="navbar-brand" href="/">
           <img src={brandLogo} alt="Logo de RC Drive" className="mr-2" width="150" height="100" />
